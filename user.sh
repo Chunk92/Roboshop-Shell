@@ -1,7 +1,7 @@
 dnf module disable nodejs -y
 dnf module enable nodejs:18 -y
 dnf install nodejs -y
-cp user.service /etc/systemd/system
+cp user.service /etc/systemd/system/
 useradd roboshop
 mkdir /app 
 curl -L -o /tmp/user.zip https://roboshop-artifacts.s3.amazonaws.com/user.zip 

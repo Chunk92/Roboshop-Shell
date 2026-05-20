@@ -10,6 +10,6 @@ unzip /tmp/catalogue.zip
 npm install 
 systemctl daemon-reload
 systemctl enable catalogue 
-systemctl start catalogue
+systemctl restart catalogue
 dnf install mongodb-org-shell -y
 mongo --host mongodb.linuxchunk.online </app/schema/catalogue.js

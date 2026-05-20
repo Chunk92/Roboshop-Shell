@@ -12,5 +12,5 @@ systemctl daemon-reload
 systemctl enable shipping 
 systemctl start shipping
 dnf install mysql -y 
-mysql -h 54.87.209.7 -uroot -pRoboShop@1 < /app/schema/shipping.sql 
+mysql -h mysql.linuxchunk.online -uroot -pRoboShop@1 < /app/schema/shipping.sql 
 systemctl restart shipping

@@ -4,6 +4,7 @@ dnf install nodejs -y
 dnf install npm -y
 useradd roboshop
 cp cart.service /etc/systemd/system/
+rm -rf /app
 mkdir /app 
 curl -L -o /tmp/cart.zip https://roboshop-artifacts.s3.amazonaws.com/cart.zip 
 cd /app 

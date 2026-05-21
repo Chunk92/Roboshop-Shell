@@ -3,6 +3,7 @@ dnf module enable nodejs:18 -y
 cp catalogue.service /etc/systemd/system/
 cp mongo.repo /etc/yum.repos.d/
 useradd roboshop
+rm -rf /app
 mkdir /app 
 curl -o /tmp/catalogue.zip https://roboshop-artifacts.s3.amazonaws.com/catalogue.zip 
 cd /app 
